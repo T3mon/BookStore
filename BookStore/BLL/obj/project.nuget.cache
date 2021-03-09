@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xX62BZP7F694pE3aKlNgGr7l9/dMoM9/3TkJGapy7Y3V+ESCWTJ7RMfLyxj1qetsu4EkGFRQh4lMwzo82HIeIA==",
+  "dgSpecHash": "7k45RwN6zH49ItVcFhAe1D0dKByfyF1aju5Z1xoG8S4zSVhpIMNV58UHdTi4krU1YeMX27PWTSdZv5CA5ZimWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\student\\source\\repos\\BookStore\\BLL\\BLL.csproj",
+  "projectFilePath": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\BLL\\BLL.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

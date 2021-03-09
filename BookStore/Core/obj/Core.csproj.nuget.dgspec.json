@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\student\\source\\repos\\BookStore\\Core\\Core.csproj": {}
+    "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\student\\source\\repos\\BookStore\\Core\\Core.csproj": {
+    "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\source\\repos\\BookStore\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\student\\source\\repos\\BookStore\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\source\\repos\\BookStore\\Core\\obj\\",
+        "outputPath": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
