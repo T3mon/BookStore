@@ -428,3 +428,4 @@ C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\De
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Accout\Register.cshtml.g.cs
