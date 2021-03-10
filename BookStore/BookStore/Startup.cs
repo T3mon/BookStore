@@ -1,3 +1,4 @@
+using BLL;
 using BLL.Infrastructure;
 using Domain.Models;
 using Microsoft.AspNetCore.Builder;
@@ -25,6 +26,7 @@ namespace BookStore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddTransient(typeof(BookService));
             BllConfiguration.Configuration(services, Configuration.GetConnectionString("defCon"));
         }
 

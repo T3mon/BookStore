@@ -4,3 +4,11 @@ C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\obj\Debug\ne
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\bin\Debug\netcoreapp3.1\BLL.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\bin\Debug\netcoreapp3.1\BLL.pdb
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\obj\Debug\netcoreapp3.1\BLL.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\obj\Debug\netcoreapp3.1\BLL.pdb

@@ -14,7 +14,7 @@ namespace BLL
         {
             _storeContext = storeContext;
         }
-        IList<Book> GetBooks()
+        public IList<Book> GetBooks()
         {
             return _storeContext.Books.ToList();
         }
