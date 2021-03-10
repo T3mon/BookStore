@@ -1,3 +1,5 @@
+using BLL.Infrastructure;
+using Domain.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +25,7 @@ namespace BookStore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            BllConfiguration.Configuration(services, Configuration.GetConnectionString("defCon"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

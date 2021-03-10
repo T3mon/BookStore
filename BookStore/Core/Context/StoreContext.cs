@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Core.Context
 {
-    class StoreContext : IdentityDbContext<User, Role, Guid>
+    public class StoreContext : IdentityDbContext<User, Role, Guid>
     {
         public StoreContext(DbContextOptions<StoreContext> options) : base(options)
         {

@@ -1,0 +1,6 @@
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\obj\Debug\netcoreapp3.1\BLL.csprojAssemblyReference.cache
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BLL\bin\Debug\netcoreapp3.1\Domain.pdb

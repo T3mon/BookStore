@@ -254,6 +254,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.4",
           "Microsoft.Extensions.Identity.Stores": "5.0.4"
         },
         "compile": {
