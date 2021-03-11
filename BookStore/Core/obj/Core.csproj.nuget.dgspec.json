@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj": {}
+    "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Core\\Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj": {
+    "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Артем\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\obj\\",
+        "projectPath": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Артем\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -34,8 +32,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj"
+              "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Domain\\Domain.csproj"
               }
             }
           }
@@ -78,24 +76,22 @@
         }
       }
     },
-    "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj": {
+    "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Артем\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\student\\Documents\\GitHub\\BookStore\\BookStore\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Артем\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

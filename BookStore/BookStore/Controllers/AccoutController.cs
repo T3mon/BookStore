@@ -21,7 +21,7 @@ namespace BookStore.Controllers
             _roleManager = roleManager;
         }
         [HttpGet]
-        public async Task<IActionResult> Register() =>  View();
+        public ActionResult Register() => View();
         [HttpPost]
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel model, string returnUrl = "")
@@ -51,6 +51,26 @@ namespace BookStore.Controllers
             }
             return RedirectToAction("Register", "Accout");
 
+        }
+        [HttpGet]
+        public ActionResult Login() => View();
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = "")
+        {
+            if (!TryValidateModel(model)) return StatusCode(500);
+
+            var user = new User()
+            {
+                Email = model.Login,
+                UserName = model.Login
+            };
+            var res = await _signInManager.PasswordSignInAsync(model.Login, model.Password, model.isRememberMe, false);
+            if (res.Succeeded)
+            {
+                return RedirectToAction("Privacy", "Home");
+            }
+            return StatusCode(500);
         }
     }
 }

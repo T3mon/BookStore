@@ -1,5 +1,6 @@
 ﻿using BLL;
 using BookStore.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -25,7 +26,7 @@ namespace BookStore.Controllers
         {
             return View(_bookService.GetBooks());
         }
-
+        [Authorize]
         public IActionResult Privacy()
         {
             return View();
