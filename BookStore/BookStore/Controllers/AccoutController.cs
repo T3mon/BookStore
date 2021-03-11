@@ -20,7 +20,6 @@ namespace BookStore.Controllers
             _signInManager = signInManager;
             _roleManager = roleManager;
         }
-
         public async Task<IActionResult> Logout()
         {
             // удаляем аутентификационные куки
@@ -78,7 +77,7 @@ namespace BookStore.Controllers
             {
                 return RedirectToAction("Index", "Home");
             }
-            return StatusCode(500);
+            return View();
         }
     }
 }
