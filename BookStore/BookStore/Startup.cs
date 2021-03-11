@@ -27,6 +27,7 @@ namespace BookStore
         {
             services.AddControllersWithViews();
             services.AddTransient(typeof(BookService));
+            services.AddAuthentication().AddCookie(op => op.LoginPath = "/Login");
             BllConfiguration.Configuration(services, Configuration.GetConnectionString("defCon"));
         }
 
@@ -46,7 +47,8 @@ namespace BookStore
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseAuthentication();
+            app.UseAuthentication();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

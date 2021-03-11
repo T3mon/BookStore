@@ -8,6 +8,9 @@ namespace Domain.Models
     public class User : IdentityUser<Guid>
     {
         public IList<Book> PurchasedBooks { get; set; }
-
+        public User()
+        {
+            PurchasedBooks = new List<Book>();
+        }
     }
 }

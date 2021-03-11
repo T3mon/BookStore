@@ -860,3 +860,4 @@ C:\Users\student\Documents\GitHub\BookStore\BookStore\BookStore\obj\Debug\netcor
 C:\Users\student\Documents\GitHub\BookStore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.dll
 C:\Users\student\Documents\GitHub\BookStore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.pdb
 C:\Users\student\Documents\GitHub\BookStore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.genruntimeconfig.cache
+C:\Users\student\Documents\GitHub\BookStore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Accout\Login.cshtml.g.cs

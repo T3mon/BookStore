@@ -20,6 +20,14 @@ namespace BookStore.Controllers
             _signInManager = signInManager;
             _roleManager = roleManager;
         }
+
+        public async Task<IActionResult> Logout()
+        {
+            // удаляем аутентификационные куки
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
+
         [HttpGet]
         public ActionResult Register() => View();
         [HttpPost]
@@ -36,7 +44,7 @@ namespace BookStore.Controllers
             var res = await _userManager.CreateAsync(user, model.Password);
             if (res.Succeeded)
             {
-                if (_roleManager.FindByNameAsync("user") == null)
+                if (await _roleManager.FindByNameAsync("user") == null)
                 {
                     var role = await _roleManager.CreateAsync(new Role() { Name = "user" });
                     if (role.Succeeded)
@@ -68,7 +76,7 @@ namespace BookStore.Controllers
             var res = await _signInManager.PasswordSignInAsync(model.Login, model.Password, model.isRememberMe, false);
             if (res.Succeeded)
             {
-                return RedirectToAction("Privacy", "Home");
+                return RedirectToAction("Index", "Home");
             }
             return StatusCode(500);
         }

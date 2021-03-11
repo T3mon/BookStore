@@ -13,9 +13,11 @@ namespace Domain.Models
         public int Price{ get; set; }
         public int Rating{ get; set; }
         public Autor BookAutor{ get; set; }
+        public IList<Reviews> Reviews { get; set; }
         public Book()
         {
-            BookAutor = new Autor;
+            BookAutor = new Autor();
+            Reviews = new List<Reviews>();
         }
     }
 }
