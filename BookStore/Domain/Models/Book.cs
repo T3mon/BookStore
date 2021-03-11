@@ -11,7 +11,6 @@ namespace Domain.Models
         public string Description { get; set; }
         public string Text { get; set; }
         public int Price{ get; set; }
-        public int Rating{ get; set; }
         public Autor BookAutor{ get; set; }
         public IList<Reviews> Reviews { get; set; }
         public Book()
