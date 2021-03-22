@@ -861,3 +861,6 @@ C:\Users\student\Documents\GitHub\BookStore\BookStore\BookStore\obj\Debug\netcor
 C:\Users\student\Documents\GitHub\BookStore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.pdb
 C:\Users\student\Documents\GitHub\BookStore\BookStore\BookStore\obj\Debug\netcoreapp3.1\BookStore.genruntimeconfig.cache
 C:\Users\student\Documents\GitHub\BookStore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Accout\Login.cshtml.g.cs
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\netcoreapp3.1\SendGrid.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\obj\Debug\netcoreapp3.1\Razor\Views\Accout\Login.cshtml.g.cs

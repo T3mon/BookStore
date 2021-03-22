@@ -1,4 +1,5 @@
-﻿using BookStore.Models;
+﻿using BLL;
+using BookStore.Models;
 using Domain.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -14,11 +15,13 @@ namespace BookStore.Controllers
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly RoleManager<Role> _roleManager;
-        public AccoutController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<Role> roleManager)
+        private readonly BookService _bookService;
+        public AccoutController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<Role> roleManager, BookService bookService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _bookService = bookService;
         }
         public async Task<IActionResult> Logout()
         {
@@ -51,6 +54,7 @@ namespace BookStore.Controllers
                     }
                 }
                 else await _userManager.AddToRoleAsync(user, "user");
+                await BookService.SendMail();
                 await _signInManager.SignInAsync(user, false);
                 return RedirectToAction("Index", "Home");
 
