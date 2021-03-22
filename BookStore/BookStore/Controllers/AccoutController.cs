@@ -54,7 +54,7 @@ namespace BookStore.Controllers
                     }
                 }
                 else await _userManager.AddToRoleAsync(user, "user");
-                await BookService.SendMail();
+                await BookService.SendMail(user.Email);
                 await _signInManager.SignInAsync(user, false);
                 return RedirectToAction("Index", "Home");
 
