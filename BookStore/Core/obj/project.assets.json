@@ -3492,28 +3492,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Артем\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\student\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj",
-      "packagesPath": "C:\\Users\\Артем\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\obj\\",
+      "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Core\\Core.csproj",
+      "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Артем\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -3526,8 +3523,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj"
+            "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj"
             }
           }
         }
@@ -3570,7 +3567,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

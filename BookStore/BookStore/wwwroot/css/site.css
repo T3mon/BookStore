@@ -1,279 +1,262 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿
+.navbar {
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #dfe3e8;
+    border-radius: 0;
 }
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
-}
-@use postcss-preset-env {
-    stage: 0;
-}
-
-/* helpers/align.css */
-
-.align {
-    display: grid;
-    place-items: center;
-}
-
-/* helpers/grid.css */
-
-:root {
-    --gridMaxWidth: 24em;
-    --gridWidth: 90%;
-}
-
-.grid {
-    inline-size: var(--gridWidth);
-    margin-inline: auto;
-    max-inline-size: var(--gridMaxWidth);
-}
-
-/* helpers/icon.css */
-
-.icon {
-    block-size: 1.25em;
-    display: inline-block;
-    inline-size: 1.25em;
-    line-height: 1.25em;
-    margin-right: 0.625em;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.icon--info {
-    background-color: #e5e5e5;
+.nav img {
     border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: -8px 0;
+    float: left;
+    margin-right: 10px;
 }
 
-/* layout/base.css */
-
-:root {
-    --bodyBackgroundColor: #eaeaea;
-    --bodyColor: #999;
-    --bodyFontFamily: 'Helvetica', 'Arial';
-    --bodyFontFamilyFallback: sans-serif;
-    --bodyFontSize: 0.875rem;
-    --bodyFontWeight: 400;
-    --bodyLineHeight: 1.5;
+.navbar .navbar-brand, .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+    padding-left: 0;
+    font-size: 20px;
+    padding-right: 50px;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-body {
-    background-color: var(--bodyBackgroundColor);
-    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
-    font-size: var(--bodyFontSize);
-    font-weight: var(--bodyFontWeight);
-    line-height: var(--bodyLineHeight);
-    margin: 0;
-    min-block-size: 100vh;
-}
-
-/* modules/anchor.css */
-
-:root {
-    --anchorColor: inherit;
-    --anchorHoverColor: #1dabb8;
-}
-
-a {
-    color: var(--anchorColor);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-    a:hover {
-        color: var(--anchorHoverColor);
+    .navbar .navbar-brand b {
+        font-weight: bold;
+        color: #33cabb;
     }
 
-/* modules/form.css */
-
-fieldset {
-    border: none;
-    margin: 0;
+.navbar .form-inline {
+    display: inline-block;
 }
 
-
-    input[type='submit'] {
-        cursor: pointer;
-    }
-
-.form input[type='email'],
-.form input[type='text'],
-.form input[type='password'] {
-    inline-size: 100%;
-    appearance: none;
-    border: none;
-    font: inherit;
-    margin: 0;
-    outline: none;
-    padding: 0;
-}
-
-/* modules/login.css */
-
-:root {
-    --loginBorderRadius: 0.25em;
-    --loginHeaderBackgroundColor: #282830;
-    --loginInputBorderRadius: 0.25em;
-}
-
-.login__header {
-    background-color: var(--loginHeaderBackgroundColor);
-    border-top-left-radius: var(--loginBorderRadius);
-    border-top-right-radius: var(--loginBorderRadius);
-    color: #fff;
-    padding: 1.5em;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.login__title {
-    font-size: 1rem;
-    margin: 0;
-}
-
-.login__body {
-    background-color: #fff;
-    padding: 1.5em;
+.navbar .nav li {
     position: relative;
 }
 
-    .login__body::before {
-        background-color: #fff;
-        content: '';
-        height: 0.5em;
-        left: 50%;
-        margin-left: -0.25em;
-        margin-top: -0.25em;
+    .navbar .nav li a {
+        color: #888;
+    }
+
+.search-box {
+    position: relative;
+}
+
+    .search-box input {
+        padding-right: 35px;
+        border-color: #dfe3e8;
+        border-radius: 4px !important;
+        box-shadow: none
+    }
+
+    .search-box .input-group-addon {
+        min-width: 35px;
+        border: none;
+        background: transparent;
         position: absolute;
-        top: 0;
-        transform: rotate(45deg);
-        width: 0.5em;
+        right: 0;
+        z-index: 9;
+        padding: 7px;
+        height: 100%;
     }
 
-.login input[type='email'],
-.login input[type='text'],
-.login input[type='password'] {
-    border: 0.0625em solid #e5e5e5;
-    padding: 1em 1.25em;
-}
+    .search-box i {
+        color: #a0a5b1;
+        font-size: 19px;
+    }
 
-.login input[type='email'] {
-    border-top-left-radius: var(--loginInputBorderRadius);
-    border-top-right-radius: var(--loginInputBorderRadius);
-}
-.login input[type='text'] {
-    border-top-left-radius: var(--loginInputBorderRadius);
-    border-top-right-radius: var(--loginInputBorderRadius);
-}
-
-.login input[type='password'] {
-    border-bottom-left-radius: var(--loginInputBorderRadius);
-    border-bottom-right-radius: var(--loginInputBorderRadius);
-    border-top: 0;
-}
-
-.login input[type='submit'] {
-    background-color: #1dabb8;
-    border-radius: var(--loginInputBorderRadius);
+.navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
     color: #fff;
-    font-weight: 700;
-    order: 1;
-    padding: 0.75em 1.25em;
-    transition: background-color 0.3s;
+    background: #33cabb;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    vertical-align: middle;
+    border: none;
 }
 
-    .login input[type='submit']:focus,
-    .login input[type='submit']:hover {
-        background-color: #198d98;
+    .navbar .nav .btn-primary:hover, .navbar .nav .btn-primary:focus {
+        color: #fff;
+        outline: none;
+        background: #31bfb1;
     }
 
-.login__footer {
-    align-items: center;
-    background-color: #fff;
-    border-bottom-left-radius: var(--loginBorderRadius);
-    border-bottom-right-radius: var(--loginBorderRadius);
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 1.5em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+.navbar .navbar-right li:first-child a {
+    padding-right: 30px;
 }
 
-    .login__footer p {
-        margin: 0;
+.navbar ul li i {
+    font-size: 18px;
+}
+
+.navbar .dropdown-menu i {
+    font-size: 16px;
+    min-width: 22px;
+}
+
+.navbar ul.nav li.active a, .navbar ul.nav li.open > a {
+    background: transparent !important;
+}
+
+.navbar .nav .get-started-btn {
+    min-width: 120px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.navbar ul.nav li.open > a.get-started-btn {
+    color: #fff;
+    background: #31bfb1 !important;
+}
+
+.navbar .dropdown-menu {
+    border-radius: 1px;
+    border-color: #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+
+.navbar .nav .dropdown-menu li {
+    color: #999;
+    font-weight: normal;
+}
+
+    .navbar .nav .dropdown-menu li a, .navbar .nav .dropdown-menu li a:hover, .navbar .nav .dropdown-menu li a:focus {
+        padding: 8px 20px;
+        line-height: normal;
     }
+
+.navbar .navbar-form {
+    border: none;
+}
+
+.navbar .dropdown-menu.form-wrapper {
+    width: 280px;
+    padding: 20px;
+    left: auto;
+    right: 0;
+    font-size: 14px;
+}
+
+    .navbar .dropdown-menu.form-wrapper a {
+        color: #33cabb;
+        padding: 0 !important;
+    }
+
+        .navbar .dropdown-menu.form-wrapper a:hover {
+            text-decoration: underline;
+        }
+
+.navbar .form-wrapper .hint-text {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.navbar .form-wrapper .social-btn .btn, .navbar .form-wrapper .social-btn .btn:hover {
+    color: #fff;
+    margin: 0;
+    padding: 0 !important;
+    font-size: 13px;
+    border: none;
+    transition: all 0.4s;
+    text-align: center;
+    line-height: 34px;
+    width: 47%;
+    text-decoration: none;
+}
+
+.navbar .social-btn .btn-primary {
+    background: #507cc0;
+}
+
+    .navbar .social-btn .btn-primary:hover {
+        background: #4676bd;
+    }
+
+.navbar .social-btn .btn-info {
+    background: #64ccf1;
+}
+
+    .navbar .social-btn .btn-info:hover {
+        background: #4ec7ef;
+    }
+
+.navbar .social-btn .btn i {
+    margin-right: 5px;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+}
+
+.navbar .form-wrapper .form-footer {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+    .navbar .form-wrapper .form-footer a:hover {
+        text-decoration: underline;
+    }
+
+.navbar .form-wrapper .checkbox-inline input {
+    margin-top: 3px;
+}
+
+.or-seperator {
+    margin-top: 32px;
+    text-align: center;
+    border-top: 1px solid #e0e0e0;
+}
+
+    .or-seperator b {
+        color: #666;
+        padding: 0 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+        text-align: center;
+        line-height: 26px;
+        background: #fff;
+        display: inline-block;
+        border: 1px solid #e0e0e0;
+        border-radius: 50%;
+        position: relative;
+        top: -15px;
+        z-index: 1;
+    }
+
+.navbar .checkbox-inline {
+    font-size: 13px;
+}
+
+.navbar .navbar-right .dropdown-toggle::after {
+    display: none;
+}
+
+@media (min-width: 1200px) {
+    .form-inline .input-group {
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .dropdown-menu.form-wrapper {
+        width: 100%;
+        padding: 10px 15px;
+        background: transparent;
+        border: none;
+    }
+
+    .navbar .form-inline {
+        display: block;
+    }
+
+    .navbar .input-group {
+        width: 100%;
+    }
+
+    .navbar .nav .btn-primary, .navbar .nav .btn-primary:active {
+        display: block;
+    }
+}

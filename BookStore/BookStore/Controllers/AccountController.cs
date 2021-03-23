@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 
 namespace BookStore.Controllers
 {
-    public class AccoutController : Controller
+    public class AccountController : Controller
     {
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly RoleManager<Role> _roleManager;
         private readonly BookService _bookService;
-        public AccoutController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<Role> roleManager, BookService bookService)
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<Role> roleManager, BookService bookService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -39,7 +39,7 @@ namespace BookStore.Controllers
 
             var user = new User()
             {
-                Email = model.Login,
+                Email = model.Email,
                 UserName = model.Login
             };
             var res = await _userManager.CreateAsync(user, model.Password);
@@ -72,7 +72,7 @@ namespace BookStore.Controllers
 
             var user = new User()
             {
-                Email = model.Login,
+                Email = model.Email,
                 UserName = model.Login
             };
             var res = await _signInManager.PasswordSignInAsync(model.Login, model.Password, model.isRememberMe, false);

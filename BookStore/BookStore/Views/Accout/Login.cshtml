@@ -4,8 +4,6 @@
     ViewData["Title"] = "Login";
 }
 
-<h1>Login</h1>
-
 <div class="grid">
     <form asp-action="Login" class="form login">
 
@@ -14,7 +12,6 @@
         </header>
 
         <div class="login__body">
-
             <div class="form__field">
                 <input asp-for="Login" type="text" placeholder="User Name" required>
                 <span asp-validation-for="Login" class="text-danger"></span>
@@ -23,9 +20,11 @@
                 <input asp-for="Password" type="password" placeholder="Password" required>
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
+            <br />
             <div class="form__field">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="isRememberMe" /> @Html.DisplayNameFor(model => model.isRememberMe)
+                    <input type="checkbox"  class="form-check-input" asp-for="isRememberMe" />
+                    <label for="isRememberMe">Remember me</label>
                 </label>
             </div>
 

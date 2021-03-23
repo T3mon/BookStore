@@ -26,6 +26,10 @@ namespace BookStore.Controllers
         {
             return View(_bookService.GetBooks());
         }
+        public IActionResult TermsOfService()
+        {
+            return View();
+        }
         [Authorize]
         public IActionResult Privacy()
         {
