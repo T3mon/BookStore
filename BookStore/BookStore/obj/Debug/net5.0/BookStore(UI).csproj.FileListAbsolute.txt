@@ -857,8 +857,6 @@ C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5
 C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5.0\BookStore(UI).TagHelpers.input.cache
 C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5.0\BookStore(UI).TagHelpers.output.cache
 C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5.0\BookStore(UI).RazorCoreGenerate.cache
-C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Accout\Login.cshtml.g.cs
-C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Accout\Register.cshtml.g.cs
 C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs

@@ -32,6 +32,7 @@ namespace BLL
             var htmlContent = "<strong>and will definetly be smarter</strong>";
             var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
             var response = await client.SendEmailAsync(msg);
+            //todo dsfsdf
         }
     }
 }

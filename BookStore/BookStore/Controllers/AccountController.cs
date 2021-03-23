@@ -29,8 +29,6 @@ namespace BookStore.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        [HttpGet]
-        public ActionResult Register() => View();
         [HttpPost]
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel model, string returnUrl = "")
@@ -62,8 +60,6 @@ namespace BookStore.Controllers
             return RedirectToAction("Register", "Accout");
 
         }
-        [HttpGet]
-        public ActionResult Login() => View();
         [HttpPost]
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = "")
