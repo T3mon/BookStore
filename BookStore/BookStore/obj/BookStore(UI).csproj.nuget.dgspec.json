@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BookStore\\BookStore(UI).csproj": {}
+    "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BookStore\\BookStore(UI).csproj": {}
   },
   "projects": {
-    "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BLL\\BLL.csproj": {
+    "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BLL\\BLL.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BLL\\obj\\",
+        "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\Артем\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Артем\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -32,11 +34,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Core\\Core.csproj"
+              "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj"
               },
-              "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj"
+              "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj"
               }
             }
           }
@@ -79,26 +81,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BookStore\\BookStore(UI).csproj": {
+    "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BookStore\\BookStore(UI).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BookStore\\BookStore(UI).csproj",
+        "projectUniqueName": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BookStore\\BookStore(UI).csproj",
         "projectName": "BookStore(UI)",
-        "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BookStore\\BookStore(UI).csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BookStore\\obj\\",
+        "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BookStore\\BookStore(UI).csproj",
+        "packagesPath": "C:\\Users\\Артем\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BookStore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Артем\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -111,11 +115,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BLL\\BLL.csproj": {
-                "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\BLL\\BLL.csproj"
+              "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BLL\\BLL.csproj": {
+                "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BLL\\BLL.csproj"
               },
-              "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj"
+              "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj"
               }
             }
           }
@@ -165,26 +169,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Core\\Core.csproj": {
+    "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Core\\obj\\",
+        "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\Артем\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Артем\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -197,8 +203,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj"
+              "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj"
               }
             }
           }
@@ -241,26 +247,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj": {
+    "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\student\\Source\\Repos\\T3mon\\BookStore\\BookStore\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Артем\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Артем\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -313,7 +321,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

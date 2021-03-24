@@ -29,6 +29,7 @@ namespace BookStore.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+
         [HttpPost]
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Register(RegisterViewModel model, string returnUrl = "")
