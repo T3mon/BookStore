@@ -872,3 +872,5 @@ C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5
 C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5.0\BookStore(UI).genruntimeconfig.cache
 C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Home\TermsOfService.cshtml.g.cs
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Home\TermsOfService.cshtml.g.cs
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Account\Register.cshtml.g.cs

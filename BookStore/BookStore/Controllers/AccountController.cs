@@ -1,4 +1,5 @@
 ﻿using BLL;
+using BLL.Service.Interfaces;
 using BookStore.Models;
 using Domain.Models;
 using Microsoft.AspNetCore.Identity;
@@ -16,19 +17,32 @@ namespace BookStore.Controllers
         private readonly SignInManager<User> _signInManager;
         private readonly RoleManager<Role> _roleManager;
         private readonly BookService _bookService;
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<Role> roleManager, BookService bookService)
+        private readonly IEmailSender _emailSender;
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<Role> roleManager, BookService bookService, IEmailSender emailSender)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
             _bookService = bookService;
+            _emailSender = emailSender;
         }
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
-
+        [HttpGet]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult Register()
+        {
+            return View();
+        }
+        [HttpGet]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult Login()
+        {
+            return View();
+        }
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
@@ -53,7 +67,12 @@ namespace BookStore.Controllers
                     }
                 }
                 else await _userManager.AddToRoleAsync(user, "user");
-                await BookService.SendMail(user.Email);
+
+                var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                var link = Url.Action("Confirm", "Account",
+                    new { guid = token, userEmail = user.Email }, Request.Scheme, Request.Host.Value);
+                await _emailSender.SendEmailAsync(user.Email, "Link ->>>", link);
+
                 await _signInManager.SignInAsync(user, false);
                 return RedirectToAction("Index", "Home");
 

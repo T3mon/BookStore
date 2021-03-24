@@ -1,5 +1,8 @@
 using BLL;
 using BLL.Infrastructure;
+using BLL.Infrastructure.Provider;
+using BLL.Service;
+using BLL.Service.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,6 +28,13 @@ namespace BookStore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var option = new SendGridOptions();
+            Configuration.GetSection("SendGridOptions").Bind(option);
+            services.AddTransient<SendGridOptions>(x => option);
+
+            services.AddTransient<IEmailSender, EmailSender>();
+            services.Configure<EmailConfirmationProviderOption>(op => op.TokenLifespan = TimeSpan.FromDays(20));
+
             services.AddControllersWithViews();
             services.AddTransient(typeof(BookService));
             services.AddAuthentication().AddCookie(op => op.LoginPath = "/Login");
