@@ -18,7 +18,7 @@
 }
 
 .views {
-    font-size: 0.85rem
+    font-size: 1.15rem
 }
 
 .btn {
@@ -103,7 +103,7 @@
     }
 
 .count {
-    font-size: 0.8rem
+    font-size: 1.1rem
 }
 
 label {
@@ -168,7 +168,7 @@ label {
 }
 
 #country {
-    font-size: 0.8rem;
+    font-size: 11px;
     border: none;
     border-left: 1px solid #ccc;
     padding: 0px 10px;
@@ -181,7 +181,7 @@ label {
 }
 
 div.text-muted {
-    font-size: 0.85rem
+    font-size: 1.2rem
 }
 
 #sidebar {
@@ -190,7 +190,7 @@ div.text-muted {
 }
 
 .category {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     cursor: pointer
 }
 
@@ -259,7 +259,7 @@ div.text-muted {
 }
 
     .card-body .description {
-        font-size: 0.78rem;
+        font-size: 1.1rem;
         padding-bottom: 8px
     }
 
