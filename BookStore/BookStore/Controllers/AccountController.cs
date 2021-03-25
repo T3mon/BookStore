@@ -58,6 +58,7 @@ namespace BookStore.Controllers
             var res = await _userManager.CreateAsync(user, model.Password);
             if (res.Succeeded)
             {
+                //User creation
                 if (await _roleManager.FindByNameAsync("user") == null)
                 {
                     var role = await _roleManager.CreateAsync(new Role() { Name = "user" });
@@ -67,19 +68,18 @@ namespace BookStore.Controllers
                     }
                 }
                 else await _userManager.AddToRoleAsync(user, "user");
-
+                //Account confiramtion
                 var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                 var link = Url.Action("Confirm", "Account",
                     new { guid = token, userEmail = user.Email }, Request.Scheme, Request.Host.Value);
-                await _emailSender.SendEmailAsync(user.Email, "Link ->>>", link);
+                await _emailSender.SendEmailAsync(user.Email, "Link ->>> ", link);
 
                 await _signInManager.SignInAsync(user, false);
                 return RedirectToAction("Index", "Home");
-
             }
             return RedirectToAction("Register", "Accout");
-
         }
+
         [HttpPost]
         [AutoValidateAntiforgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = "")
@@ -96,6 +96,55 @@ namespace BookStore.Controllers
             {
                 return RedirectToAction("Index", "Home");
             }
+            return View();
+        }
+
+        //RESET PASSWORD
+
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public async Task<IActionResult> ResetPasswordAsync(string userEmail)
+        {
+            var user = await _userManager.FindByEmailAsync(userEmail);
+            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+            var link = Url.Action("ChangePassword", "Account",
+                new { guid = token, userEmail = user.Email }, Request.Scheme, Request.Host.Value);
+            await _emailSender.SendEmailAsync(user.Email, "Link ->>>", link);
+
+            // add Send View 
+            return Redirect("/home/index");
+
+        }
+
+        [HttpGet]
+        public IActionResult ChangePasswordAsync(string userEmail, string guid)
+        {
+            return  View( new ResetPasswordViewModel() { Email = userEmail, Guid = guid });
+        }
+
+        [HttpPost]
+        [AutoValidateAntiforgeryToken]
+        public async Task<IActionResult> ConfirmResetPasswordAsync(ResetPasswordViewModel model)
+        {
+            if (!TryValidateModel(model)) return View();
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            var res = await _userManager.ResetPasswordAsync(user, model.Guid, model.Password);
+            //todo add view changePassword Success
+            return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ConfirmAsync(string guid, string userEmail)
+        {
+            var user = await _userManager.FindByEmailAsync(email: userEmail);
+            var res = await _userManager.ConfirmEmailAsync(user, guid);
+            if (res.Succeeded)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            //todo add ERROR PAGE
             return View();
         }
     }
