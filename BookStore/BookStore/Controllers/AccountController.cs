@@ -43,6 +43,12 @@ namespace BookStore.Controllers
         {
             return View();
         }
+        [HttpGet]
+        [AutoValidateAntiforgeryToken]
+        public IActionResult EmailSendView()
+        {
+            return View();
+        }
 
         [HttpPost]
         [AutoValidateAntiforgeryToken]
@@ -83,7 +89,6 @@ namespace BookStore.Controllers
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = "")
         {
             if (!TryValidateModel(model)) return StatusCode(500);
-
             var user = new User()
             {
                 Email = model.Email,
@@ -97,7 +102,7 @@ namespace BookStore.Controllers
             return View();
         }
 
-        //RESET PASSWORD
+        //RESET PASSWORD METHODS
 
         [HttpGet]
         [AutoValidateAntiforgeryToken]
@@ -117,7 +122,7 @@ namespace BookStore.Controllers
             await _emailSender.SendEmailAsync(user.Email, "Link ->>>", link);
 
             // add Send View 
-            return Redirect("/home/index");
+            return Redirect("/Accout/EmailSendView");
 
         }
 

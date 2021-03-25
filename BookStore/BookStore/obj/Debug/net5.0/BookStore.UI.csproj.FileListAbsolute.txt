@@ -442,3 +442,5 @@ C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\De
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Account\ResetPassword.cshtml.g.cs
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Account\EmailSendView.cshtml.g.cs
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\libman.json
