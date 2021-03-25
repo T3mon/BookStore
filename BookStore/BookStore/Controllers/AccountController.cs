@@ -136,7 +136,8 @@ namespace BookStore.Controllers
             var user = await _userManager.FindByEmailAsync(model.Email);
             var res = await _userManager.ResetPasswordAsync(user, model.Guid, model.Password);
             //todo add view changePassword Success
-            return View();
+            return RedirectToAction("Index", "Home");
+
         }
 
         [HttpGet]
