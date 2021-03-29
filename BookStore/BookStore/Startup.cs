@@ -38,7 +38,7 @@ namespace BookStore
     options =>
         options.UseSqlServer(
             Configuration.GetConnectionString("defCon"),
-            x => x.MigrationsAssembly("Domain")));
+            x => x.MigrationsAssembly("Core")));
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<EmailConfirmationProviderOption>(op => op.TokenLifespan = TimeSpan.FromDays(20));

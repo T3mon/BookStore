@@ -121,9 +121,7 @@ namespace BookStore.Controllers
                 new { guid = token, userEmail = user.Email }, Request.Scheme, Request.Host.Value);
             await _emailSender.SendEmailAsync(user.Email, "Link ->>>", link);
 
-            // add Send View 
-            return RedirectToAction("EmailSendView", "Accout");
-            //return Redirect("/Accout/EmailSendView");
+            return RedirectToAction("EmailSendView");
 
         }
 

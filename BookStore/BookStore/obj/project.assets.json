@@ -2464,6 +2464,7 @@
           "Domain": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.4",
           "Microsoft.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
           "SendGrid": "9.22.0"
         },
         "compile": {

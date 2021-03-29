@@ -4,16 +4,14 @@ using Core.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Domain.Migrations
+namespace Core.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20210329095149_initial")]
-    partial class initial
+    partial class StoreContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,6 +51,9 @@ namespace Domain.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LogoUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
