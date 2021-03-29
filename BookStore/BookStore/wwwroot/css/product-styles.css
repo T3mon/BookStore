@@ -277,16 +277,13 @@ h6 {
 }
 
 .btn.btn-primary {
-    background-color: #48b83e;
+    background-color: #33cabb;
     color: #fff;
-    border: 1px solid #008000;
+    border: none;
     border-radius: 10px;
     font-weight: 800
 }
 
-    .btn.btn-primary:hover {
-        background-color: #48b83ee8
-    }
 
 img {
     width: 192px;

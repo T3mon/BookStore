@@ -21,6 +21,6 @@ namespace BookStore
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                })/*.ConfigureAppConfiguration()*/;
-    }
+                });
+    }                                              
 }

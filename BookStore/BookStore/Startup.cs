@@ -3,9 +3,11 @@ using BLL.Infrastructure;
 using BLL.Infrastructure.Provider;
 using BLL.Service;
 using BLL.Service.Interfaces;
+using Core.Context;
 using Domain.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -31,6 +33,12 @@ namespace BookStore
             var option = new SendGridOptions();
             Configuration.GetSection("SendGridOptions").Bind(option);
             services.AddTransient<SendGridOptions>(x => option);
+
+            services.AddDbContext<StoreContext>(
+    options =>
+        options.UseSqlServer(
+            Configuration.GetConnectionString("defCon"),
+            x => x.MigrationsAssembly("Domain")));
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<EmailConfirmationProviderOption>(op => op.TokenLifespan = TimeSpan.FromDays(20));

@@ -122,7 +122,8 @@ namespace BookStore.Controllers
             await _emailSender.SendEmailAsync(user.Email, "Link ->>>", link);
 
             // add Send View 
-            return Redirect("/Accout/EmailSendView");
+            return RedirectToAction("EmailSendView", "Accout");
+            //return Redirect("/Accout/EmailSendView");
 
         }
 

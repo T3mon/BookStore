@@ -444,3 +444,4 @@ C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\De
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Account\ResetPassword.cshtml.g.cs
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\obj\Debug\net5.0\Razor\Views\Account\EmailSendView.cshtml.g.cs
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\libman.json
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
