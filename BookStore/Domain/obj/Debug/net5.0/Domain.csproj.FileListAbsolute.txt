@@ -24,3 +24,4 @@ C:\Users\student\Source\Repos\T3mon\BookStore\BookStore\Domain\obj\Debug\net5.0\
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\Domain\bin\Debug\net5.0\Domain.runtimeconfig.json
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\Domain\bin\Debug\net5.0\Domain.runtimeconfig.dev.json
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\Domain\obj\Debug\net5.0\Domain.genruntimeconfig.cache
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache

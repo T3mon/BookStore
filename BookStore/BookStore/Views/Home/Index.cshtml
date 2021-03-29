@@ -100,6 +100,10 @@
                     {
                         <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
                             <div class="card">
+                                @if (item.LogoUrl != null)
+                                {
+                                    <img class="card-img-top" src="@item.LogoUrl">
+                                }
                                 <img class="card-img-top" src="https://www.freepnglogos.com/uploads/cucumber-png/cucumber-png-image-purepng-transparent-png-26.png">
                                 <div class="card-body">
                                     <h6 class="font-weight-bold pt-1">@item.Name</h6>
