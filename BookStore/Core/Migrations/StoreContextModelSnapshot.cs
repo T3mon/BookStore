@@ -37,7 +37,7 @@ namespace Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Autor");
+                    b.ToTable("Autors");
                 });
 
             modelBuilder.Entity("Domain.Models.Book", b =>
@@ -77,6 +77,26 @@ namespace Core.Migrations
                     b.ToTable("Books");
                 });
 
+            modelBuilder.Entity("Domain.Models.Book_reviews", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("BookId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ReviewId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BookId");
+
+                    b.ToTable("Book_reviews");
+                });
+
             modelBuilder.Entity("Domain.Models.Review", b =>
                 {
                     b.Property<int>("Id")
@@ -84,11 +104,11 @@ namespace Core.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int?>("Book_reviewsId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Headline")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("ReviewsId")
-                        .HasColumnType("int");
 
                     b.Property<int>("Score")
                         .HasColumnType("int");
@@ -101,26 +121,9 @@ namespace Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ReviewsId");
+                    b.HasIndex("Book_reviewsId");
 
                     b.HasIndex("UserId");
-
-                    b.ToTable("Review");
-                });
-
-            modelBuilder.Entity("Domain.Models.Reviews", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int?>("BookId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("BookId");
 
                     b.ToTable("Reviews");
                 });
@@ -333,24 +336,24 @@ namespace Core.Migrations
                     b.Navigation("BookAutor");
                 });
 
+            modelBuilder.Entity("Domain.Models.Book_reviews", b =>
+                {
+                    b.HasOne("Domain.Models.Book", null)
+                        .WithMany("Reviews")
+                        .HasForeignKey("BookId");
+                });
+
             modelBuilder.Entity("Domain.Models.Review", b =>
                 {
-                    b.HasOne("Domain.Models.Reviews", null)
+                    b.HasOne("Domain.Models.Book_reviews", null)
                         .WithMany("Review")
-                        .HasForeignKey("ReviewsId");
+                        .HasForeignKey("Book_reviewsId");
 
                     b.HasOne("Domain.Models.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId");
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Domain.Models.Reviews", b =>
-                {
-                    b.HasOne("Domain.Models.Book", null)
-                        .WithMany("Reviews")
-                        .HasForeignKey("BookId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
@@ -414,7 +417,7 @@ namespace Core.Migrations
                     b.Navigation("Reviews");
                 });
 
-            modelBuilder.Entity("Domain.Models.Reviews", b =>
+            modelBuilder.Entity("Domain.Models.Book_reviews", b =>
                 {
                     b.Navigation("Review");
                 });

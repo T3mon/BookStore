@@ -1,5 +1,7 @@
 ﻿using BLL;
 using BookStore.Models;
+using BookStore.UI.Models;
+using Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -22,10 +24,17 @@ namespace BookStore.Controllers
             _bookService = bookService;
         }
 
+
         public IActionResult Index()
         {
-            return View(_bookService.GetBooks());
+            return View();
         }
+        [HttpGet]
+        public async Task<PartialViewResult> GetBooks()
+        {
+            return PartialView(await _bookService.GetBooks());
+        }
+
         public IActionResult TermsOfService()
         {
             return View();

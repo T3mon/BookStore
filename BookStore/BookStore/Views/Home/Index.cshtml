@@ -1,9 +1,19 @@
-﻿@model IEnumerable<Domain.Models.Book>
-
+﻿
 @{
     ViewData["Title"] = "Index";
 }
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: 'GET',
+            url: '@Url.Content("~/Home/GetBooks")',
+            success: function (data) {
+                $('#mainRow').html(data);
+            }
+        });
+    });
 
+</script>
 
 <div class="wrapper-fluid">
     <div class="d-md-flex align-items-md-center">
@@ -94,79 +104,9 @@
         </section> <!-- Products Section -->
         <section id="products">
             <div class="container py-3">
-                <div class="row">
-
-                    @foreach (var item in Model)
-                    {
-                        <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
-                            <div class="card">
-                                @if (item.LogoUrl != null)
-                                {
-                                    <img class="card-img-top" src="@item.LogoUrl">
-                                }
-                                <img class="card-img-top" src="https://www.freepnglogos.com/uploads/cucumber-png/cucumber-png-image-purepng-transparent-png-26.png">
-                                <div class="card-body">
-                                    <h6 class="font-weight-bold pt-1">@item.Name</h6>
-                                    <div class="text-muted description">@item.Description</div>
-                                    <div class="d-flex align-items-center product"> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span class="far fa-star"></span> </div>
-                                    <div class="d-flex align-items-center justify-content-between pt-3">
-                                        <div class="d-flex flex-column">
-                                            <div class="h6 font-weight-bold">@item.Price $</div>
-                                        </div>
-                                        <div class="btn btn-primary">Buy</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    }
+                <div class="row" id="mainRow">
                 </div>
             </div>
         </section>
     </div>
 </div>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Text)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Price)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Description)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Text)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Price)
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>

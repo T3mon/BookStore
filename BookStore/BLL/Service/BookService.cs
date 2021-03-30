@@ -1,5 +1,6 @@
 ﻿using Core.Context;
 using Domain.Models;
+using Microsoft.AspNetCore.Mvc;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 using System;
@@ -17,9 +18,10 @@ namespace BLL
         {
             _storeContext = storeContext;
         }
-        public IList<Book> GetBooks()
+        public async Task<IList<Book>> GetBooks()
         {
             return _storeContext.Books.ToList();
         }
+        
     }
 }
