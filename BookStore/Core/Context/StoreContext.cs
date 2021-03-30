@@ -15,7 +15,7 @@ namespace Core.Context
         }
         public DbSet<Autor> Autors { get; set; }
         public DbSet<Book> Books { get; set; }
-        public DbSet<Book_reviews> Book_reviews { get; set; }
-        public DbSet<Review> Reviews { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
     }
 }

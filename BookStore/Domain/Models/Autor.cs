@@ -10,6 +10,7 @@ namespace Domain.Models
         public string Description { get; set; }
         public DateTime DateOfBirth { get; set; }
         public IList<Book> Books{ get; set; }
+        public Category category { get; set; } = new Category();
         public Autor()
         {
             Books = new List<Book>();

@@ -13,11 +13,13 @@ namespace Domain.Models
         public string LogoUrl { get; set; }
         public int Price{ get; set; }
         public Autor BookAutor{ get; set; }
-        public IList<Book_reviews> Reviews { get; set; }
+        public IList<Review> Reviews { get; set; }
+        public Category Category { get; set; } 
         public Book()
         {
             BookAutor = new Autor();
-            Reviews = new List<Book_reviews>();
+            Reviews = new List<Review>();
+            Category = new Category();
         }
     }
 }
