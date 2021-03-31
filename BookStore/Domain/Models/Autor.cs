@@ -10,6 +10,8 @@ namespace Domain.Models
         public string Description { get; set; }
         public DateTime DateOfBirth { get; set; }
         public DateTime DateOfDeath { get; set; }
+
+        public int? BookAutorId { get; set; }
         public IList<Book> Books{ get; set; } = new List<Book>();
     }
 }

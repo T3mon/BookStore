@@ -35,10 +35,11 @@ namespace BookStore
             services.AddTransient<SendGridOptions>(x => option);
 
             services.AddDbContext<StoreContext>(
-    options =>
+    options => 
         options.UseSqlServer(
             Configuration.GetConnectionString("defCon"),
-            x => x.MigrationsAssembly("Core")));
+            x => x.MigrationsAssembly("Core"))
+        );
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<EmailConfirmationProviderOption>(op => op.TokenLifespan = TimeSpan.FromDays(20));

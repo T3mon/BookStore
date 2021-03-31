@@ -52,6 +52,11 @@
     padding-left: 25px
 }
 
+.mycard {
+    margin-bottom: 10px;
+
+}
+
 .radio label,
 .checkbox label {
     display: block;
@@ -242,9 +247,9 @@ div.text-muted {
 }
 
 #products {
-    width: 75%;
+    width: 75%; /*
     padding-left: 30px;
-    margin: 0;
+    margin: 0;*/
     float: right
 }
 
@@ -270,6 +275,10 @@ h6 {
 
 .product .fa-star {
     font-size: 0.9rem
+}
+
+.product {
+    word-wrap: inherit !important;
 }
 
 .rebate {
@@ -299,6 +308,73 @@ img {
     visibility: hidden
 }
 
+.stars-container {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    word-wrap: normal !important;
+}
+/*STAR RATING SYSTEM*/
+    .stars-container:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '★★★★★';
+        color: lightgray;
+    }
+
+    .stars-container:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '★★★★★';
+        color: gold;
+        overflow: hidden;
+    }
+/*STAR RATING SYSTEM*/
+.stars-0:after {
+    width: 0%;
+}
+
+.stars-1:after {
+    width: 10%;
+}
+
+.stars-2:after {
+    width: 20%;
+}
+
+.stars-3:after {
+    width: 30%;
+}
+
+.stars-4:after {
+    width: 40%;
+}
+
+.stars-5:after {
+    width: 50%;
+}
+
+.stars-6:after {
+    width: 60%;
+}
+
+.stars-7:after {
+    width: 70%;
+}
+
+.stars-8:after {
+    width: 80%;
+}
+
+.stars-9:after {
+    width: 90%;
+}
+
+.stars-10:after {
+    width: 100;
+}
 @media(min-width:992px) {
 
     .filter,
