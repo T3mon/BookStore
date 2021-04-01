@@ -27,12 +27,13 @@ namespace BookStore.Controllers
 
         public IActionResult Index()
         {
+
             return View();
         }
         [HttpGet]
-        public async Task<PartialViewResult> GetBooks()
+        public PartialViewResult GetBooks()
         {
-            return PartialView(await _bookService.GetBooks());
+            return PartialView(_bookService.GetBooks());
         }
 
         public IActionResult TermsOfService()

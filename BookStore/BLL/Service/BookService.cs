@@ -1,4 +1,7 @@
-﻿using Core.Context;
+﻿using AutoMapper;
+using BLL.ModelsDto;
+using BLL.Service.Interfaces;
+using Core.Context;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 using SendGrid;
@@ -11,17 +14,27 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class BookService
+    public class BookService : IBookService
     {
         private readonly StoreContext _storeContext;
-        public BookService(StoreContext storeContext)
+        private readonly IMapper _mapper;
+
+        public BookService(StoreContext storeContext, IMapper mapper)
         {
             _storeContext = storeContext;
+            _mapper = mapper;
         }
-        public async Task<IList<Book>> GetBooks()
+
+        public IList<BookDto> GetBooks()
         {
-            return _storeContext.Books.ToList();
+            var Books = _storeContext.Books.ToList();
+            return _mapper.Map<List<BookDto>>(Books);
         }
-        
+
+        public IList<CategoryDto> GetCategories()
+        {
+            var Categoties = _storeContext.Categories.ToList();
+            return _mapper.Map<List<CategoryDto>>(Categoties);
+        }
     }
 }

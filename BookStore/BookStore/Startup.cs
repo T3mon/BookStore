@@ -1,6 +1,8 @@
+using AutoMapper;
 using BLL;
 using BLL.Infrastructure;
 using BLL.Infrastructure.Provider;
+using BLL.MaperConfigs;
 using BLL.Service;
 using BLL.Service.Interfaces;
 using Core.Context;
@@ -40,6 +42,14 @@ namespace BookStore
             Configuration.GetConnectionString("defCon"),
             x => x.MigrationsAssembly("Core"))
         );
+            // Auto Mapper Configurations
+            var mapperConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfile());
+            });
+
+            IMapper mapper = mapperConfig.CreateMapper();
+            services.AddSingleton(mapper);
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<EmailConfirmationProviderOption>(op => op.TokenLifespan = TimeSpan.FromDays(20));
