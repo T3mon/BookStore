@@ -492,3 +492,14 @@ BookStore/.vs/BookStore/DesignTimeBuild/.dtbcache.v2
 BookStore/Domain/obj/Debug/net5.0/Domain.dll
 BookStore/Domain/obj/Debug/net5.0/Domain.pdb
 BookStore/Domain/obj/Debug/net5.0/ref/Domain.dll
+BookStore/.vs/BookStore/v16/.suo
+BookStore/BLL/obj/Debug/net5.0/BLL.pdb
+BookStore/BLL/obj/Debug/net5.0/BLL.dll
+BookStore/BLL/obj/Debug/net5.0/BLL.csprojAssemblyReference.cache
+BookStore/BLL/bin/Debug/net5.0/Domain.pdb
+BookStore/BLL/bin/Debug/net5.0/Domain.dll
+BookStore/BLL/bin/Debug/net5.0/Core.pdb
+BookStore/BLL/bin/Debug/net5.0/Core.dll
+BookStore/BLL/bin/Debug/net5.0/BLL.pdb
+BookStore/BLL/bin/Debug/net5.0/BLL.dll
+BookStore/.vs/BookStore/v16/.suo

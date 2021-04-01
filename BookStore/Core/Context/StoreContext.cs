@@ -11,7 +11,7 @@ namespace Core.Context
     {
         public StoreContext(DbContextOptions<StoreContext> options) : base(options)
         {
-            //Database.EnsureDeleted();
+            Database.EnsureDeleted();
             Database.EnsureCreated();
         }
         public DbSet<Autor> Autors { get; set; }
@@ -19,10 +19,10 @@ namespace Core.Context
         public DbSet<Category> Categories { get; set; }
 
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Book>().HasOne(x => x.Category).WithMany(x => x.Books).HasForeignKey(x => x.CategoryId);
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    base.OnModelCreating(modelBuilder);
+            //modelBuilder.Entity<Book>().HasOne(x => x.Category).WithMany(x => x.Books).HasForeignKey(x => x.CategoryId);
 
             //modelBuilder.Entity<Category>().HasData(new Category[] {
             //        new Category
@@ -89,7 +89,7 @@ namespace Core.Context
             //                LogoUrl = "https://m.media-amazon.com/images/I/61cPb04ZS7L._AC_UY218_.jpg"
             //            },
             //    });
-        }
+        //}
 
     }
 }

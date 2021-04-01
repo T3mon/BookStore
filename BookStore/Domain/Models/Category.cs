@@ -12,11 +12,15 @@ namespace Domain.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int? CategoryId { get; set; }
         public string CategoryName { get; set; }
-        public int? ParentCategoryId { get; set; }
+        public int ParentCategoryId { get; set; }
         [ForeignKey("ParentCategoryId")]
         public Category ParentCategory { get; set; }
-        public ICollection<Category> Subcategories { get; set; } = new List<Category>();
-        public IList<Book> Books { get; set; } = new List<Book>();
-
+        public ICollection<Category> Subcategories { get; set; }
+        public ICollection<Book> Books { get; set; }
+        public Category()
+        {
+            Books = new List<Book>();
+            Subcategories = new List<Category>();
+        }
     }
 }

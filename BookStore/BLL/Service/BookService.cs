@@ -35,7 +35,7 @@ namespace BLL
         {
             //This maps categories and gets book count
 
-            var cats = _storeContext.Categories.Where(x => x.CategoryId == 3).Include(c => c.Books).ToQueryString();
+            var cats = _storeContext.Categories.Include(c => c.Books).ToList();
 
 
             List<CategoryDto> result = new List<CategoryDto>();

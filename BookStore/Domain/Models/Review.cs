@@ -18,8 +18,7 @@ namespace Domain.Models
         public int Score{ get; set; }
         public Review()
         {
-            Book = new Book();
-            User = new User();
+
         }
     }
 }
