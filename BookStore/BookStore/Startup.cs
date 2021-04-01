@@ -32,12 +32,18 @@ namespace BookStore
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddControllers().AddNewtonsoftJson(options =>
+                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+
+
             var option = new SendGridOptions();
             Configuration.GetSection("SendGridOptions").Bind(option);
             services.AddTransient<SendGridOptions>(x => option);
 
             services.AddDbContext<StoreContext>(
-    options => 
+    options =>
         options.UseSqlServer(
             Configuration.GetConnectionString("defCon"),
             x => x.MigrationsAssembly("Core"))

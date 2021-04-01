@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CsO7Ajq39/xUKu/hP8M7lzuwfTxV2gYXtbL5orfhRGmW2DG90KlBEUU4XP9zUaZPehzEGGaSLfnS80D/j3V6zg==",
+  "dgSpecHash": "ORbCzohDRmsZwARZ1WtvNGetQQ08r3Hw/2ShzmndbxGJgdg3w8a0vzi+bG1e3gpQsywcCK96KJF/noqTG0FHrQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Артем\\Desktop\\ProjectsForShag\\BookStore\\BookStore\\BookStore\\BookStore.UI.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,8 @@
     "C:\\Users\\Артем\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Артем\\.nuget\\packages\\microsoft.aspnetcore.identity\\2.2.0\\microsoft.aspnetcore.identity.2.2.0.nupkg.sha512",
     "C:\\Users\\Артем\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\5.0.4\\microsoft.aspnetcore.identity.entityframeworkcore.5.0.4.nupkg.sha512",
+    "C:\\Users\\Артем\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.4\\microsoft.aspnetcore.jsonpatch.5.0.4.nupkg.sha512",
+    "C:\\Users\\Артем\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.4\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.4.nupkg.sha512",
     "C:\\Users\\Артем\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.12\\microsoft.aspnetcore.mvc.razor.extensions.3.1.12.nupkg.sha512",
     "C:\\Users\\Артем\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.12\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.12.nupkg.sha512",
     "C:\\Users\\Артем\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
@@ -81,7 +83,8 @@
     "C:\\Users\\Артем\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\5.0.2\\microsoft.visualstudio.web.codegenerators.mvc.5.0.2.nupkg.sha512",
     "C:\\Users\\Артем\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Артем\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\Артем\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Артем\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\Артем\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\Артем\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\Артем\\.nuget\\packages\\sendgrid\\9.22.0\\sendgrid.9.22.0.nupkg.sha512",
     "C:\\Users\\Артем\\.nuget\\packages\\starkbank-ecdsa\\1.2.0\\starkbank-ecdsa.1.2.0.nupkg.sha512",

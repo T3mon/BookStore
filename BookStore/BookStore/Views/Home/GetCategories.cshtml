@@ -1,0 +1,9 @@
+﻿@model IEnumerable<BLL.ModelsDto.CategoryDto>
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@foreach (var item in Model)
+{
+    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category"> @item.CategoryName <span class="badge badge-primary badge-pill">10</span> </li>
+}

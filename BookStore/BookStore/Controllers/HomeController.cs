@@ -16,7 +16,7 @@ namespace BookStore.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly BookService  _bookService;
+        private readonly BookService _bookService;
 
         public HomeController(ILogger<HomeController> logger, BookService bookService)
         {
@@ -27,14 +27,12 @@ namespace BookStore.Controllers
 
         public IActionResult Index()
         {
-
             return View();
         }
         [HttpGet]
-        public PartialViewResult GetBooks()
-        {
-            return PartialView(_bookService.GetBooks());
-        }
+        public PartialViewResult GetBooks() => PartialView(_bookService.GetBooks());
+        [HttpGet]
+        public PartialViewResult GetCategories() => PartialView(_bookService.GetCategories());
 
         public IActionResult TermsOfService()
         {

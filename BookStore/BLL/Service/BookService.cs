@@ -4,6 +4,7 @@ using BLL.Service.Interfaces;
 using Core.Context;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 using System;
@@ -27,14 +28,26 @@ namespace BLL
 
         public IList<BookDto> GetBooks()
         {
-            var Books = _storeContext.Books.ToList();
-            return _mapper.Map<List<BookDto>>(Books);
+            return _mapper.Map<List<BookDto>>(_storeContext.Books.ToList());
         }
 
         public IList<CategoryDto> GetCategories()
         {
-            var Categoties = _storeContext.Categories.ToList();
-            return _mapper.Map<List<CategoryDto>>(Categoties);
+            //This maps categories and gets book count
+
+            var cats = _storeContext.Categories.Where(x => x.CategoryId == 3).Include(c => c.Books).ToQueryString();
+
+
+            List<CategoryDto> result = new List<CategoryDto>();
+
+            foreach (var item in _storeContext.Categories.Include(c => c.Books).ToList())
+            {
+                CategoryDto category = _mapper.Map<CategoryDto>(item);
+                category.CategoryCount = item.Books.ToList().Count;
+                result.Add(category);
+            }
+
+            return result;
         }
     }
 }
