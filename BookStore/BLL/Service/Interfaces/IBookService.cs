@@ -10,6 +10,7 @@ namespace BLL.Service.Interfaces
     public interface IBookService
     {
         public IList<BookDto> GetBooks();
+        public IList<BookDto> GetBooks(int? categotyId);
         public IList<CategoryDto> GetCategories();
 
 

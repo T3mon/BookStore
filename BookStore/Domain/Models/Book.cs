@@ -15,7 +15,7 @@ namespace Domain.Models
         public string Text { get; set; }
         public string LogoUrl { get; set; }
         public int Price { get; set; }
-        public int BookAutorId { get; set; }      // внешний ключ
+        public int? BookAutorId { get; set; }      // внешний ключ
         public Autor BookAutor{ get; set; }
         public IList<Review> Reviews { get; set; }
         public int CategoryId { get; set; }      // внешний ключ

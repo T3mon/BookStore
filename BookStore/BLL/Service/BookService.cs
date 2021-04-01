@@ -31,15 +31,16 @@ namespace BLL
             return _mapper.Map<List<BookDto>>(_storeContext.Books.ToList());
         }
 
+        public IList<BookDto> GetBooks(int? categotyId)
+        {
+            return _mapper.Map<List<BookDto>>(_storeContext.Books.Where(x => x.CategoryId == categotyId).ToList());
+
+        }
+
         public IList<CategoryDto> GetCategories()
         {
-            //This maps categories and gets book count
-
-            var cats = _storeContext.Categories.Include(c => c.Books).ToList();
-
-
+            //This maps categories and gets books count
             List<CategoryDto> result = new List<CategoryDto>();
-
             foreach (var item in _storeContext.Categories.Include(c => c.Books).ToList())
             {
                 CategoryDto category = _mapper.Map<CategoryDto>(item);

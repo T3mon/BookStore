@@ -36,8 +36,6 @@ namespace BookStore
             services.AddControllers().AddNewtonsoftJson(options =>
                      options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-
-
             var option = new SendGridOptions();
             Configuration.GetSection("SendGridOptions").Bind(option);
             services.AddTransient<SendGridOptions>(x => option);

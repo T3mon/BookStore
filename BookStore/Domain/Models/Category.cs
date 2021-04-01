@@ -9,10 +9,9 @@ namespace Domain.Models
 {
     public class Category
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int? CategoryId { get; set; }
+        public int Id { get; set; }
         public string CategoryName { get; set; }
-        public int ParentCategoryId { get; set; }
+        public int? ParentCategoryId { get; set; }
         [ForeignKey("ParentCategoryId")]
         public Category ParentCategory { get; set; }
         public ICollection<Category> Subcategories { get; set; }
