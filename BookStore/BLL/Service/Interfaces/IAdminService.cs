@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL.ModelsDto;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,16 @@ namespace BLL.Service.Interfaces
 {
     public interface IAdminService
     {
-        //public async Task<book> Create();
+        Task CreateBook();
+        Task<BookDto> GetBook();
+
+        Task CreateCategory();
+        Task<CategoryDto> GetCategoryWithBooks();
         
+        Task CreateAuthor();
+        Task<CategoryDto> GetAuthorWithBooks();
+
+
+
     }
 }

@@ -20,9 +20,7 @@ namespace BLL.ModelsDto
         public CategoryDto Category { get; set; }
         public BookDto()
         {
-            BookAutor = new AutorDto();
             Reviews = new List<ReviewDto>();
-            Category = new CategoryDto();
         }
     }
 }

@@ -7,24 +7,39 @@ using System.Threading.Tasks;
 
 namespace BookStore.UI.Controllers
 {
-    public class AdminController : Controller
+
+    [ApiController]
+    [Route("[controller]")]
+    public class AdminController : ControllerBase
     {
         // GET: AdminController
-        public ActionResult Index()
+        public IActionResult Index()
         {
-            return View();
+            return null;
         }
 
         // GET: AdminController/Details/5
-        public ActionResult Details(int id)
+        public IActionResult Details(int id)
         {
-            return View();
+            return null;
+
         }
 
         // GET: AdminController/Create
-        public ActionResult Create()
+        [HttpPost]
+        public IActionResult CreateProduct()
         {
-            return View();
+            return null;
+        }
+        [HttpPost]
+        public IActionResult CreateCategory()
+        {
+            return null;
+        }
+        [HttpPost]
+        public IActionResult CreateAuthor()
+        {
+            return null;
         }
 
         // POST: AdminController/Create
@@ -38,14 +53,16 @@ namespace BookStore.UI.Controllers
             }
             catch
             {
-                return View();
+                return null;
+
             }
         }
 
         // GET: AdminController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            return null;
+
         }
 
         // POST: AdminController/Edit/5
@@ -59,14 +76,16 @@ namespace BookStore.UI.Controllers
             }
             catch
             {
-                return View();
+                return null;
+
             }
         }
 
         // GET: AdminController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return null;
+
         }
 
         // POST: AdminController/Delete/5
@@ -80,7 +99,8 @@ namespace BookStore.UI.Controllers
             }
             catch
             {
-                return View();
+                return null;
+
             }
         }
     }
