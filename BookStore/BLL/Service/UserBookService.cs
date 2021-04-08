@@ -15,12 +15,12 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class BookService : IBookService
+    public class UserBookService : IBookService
     {
         private readonly StoreContext _storeContext;
         private readonly IMapper _mapper;
 
-        public BookService(StoreContext storeContext, IMapper mapper)
+        public UserBookService(StoreContext storeContext, IMapper mapper)
         {
             _storeContext = storeContext;
             _mapper = mapper;

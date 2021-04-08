@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -64,7 +65,7 @@ namespace BookStore
             services.Configure<EmailConfirmationProviderOption>(op => op.TokenLifespan = TimeSpan.FromDays(20));
 
             services.AddControllersWithViews();
-            services.AddTransient(typeof(BookService));
+            services.AddTransient(typeof(UserBookService));
             services.AddAuthentication().AddCookie(op => op.LoginPath = "/Login");
             BllConfiguration.Configuration(services, Configuration.GetConnectionString("defCon"));
         }

@@ -16,9 +16,9 @@ namespace BookStore.Controllers
         private readonly UserManager<User> _userManager;
         private readonly SignInManager<User> _signInManager;
         private readonly RoleManager<Role> _roleManager;
-        private readonly BookService _bookService;
+        private readonly UserBookService _bookService;
         private readonly IEmailSender _emailSender;
-        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<Role> roleManager, BookService bookService, IEmailSender emailSender)
+        public AccountController(UserManager<User> userManager, SignInManager<User> signInManager, RoleManager<Role> roleManager, UserBookService bookService, IEmailSender emailSender)
         {
             _userManager = userManager;
             _signInManager = signInManager;

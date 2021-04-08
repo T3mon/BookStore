@@ -452,3 +452,7 @@ C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\obj\De
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Артем\Desktop\ProjectsForShag\BookStore\BookStore\BookStore\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll

@@ -2,8 +2,20 @@
 @*
     For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
 *@
+<script>
+    $("a.category").click(function (e) {
+        $.ajax({
+            type: 'GET',
+            url: '@Url.Content("~/Home/GetCategories")',
+            data: { Id = }, /*← FINISH THIS*/
+            success: function (data) {
+                $('#Categories').html(data);
+            }
+        });
+    });
 
-@foreach (var item in Model)
-{
-    <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category"><a asp-controller="Home" asp-action="GetBooksInCategory"> @item.CategoryName </a><span class="badge badge-primary badge-pill">@item.CategoryCount</span> </li>
+</script>
+<li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center category">
+    <a class="category" @Html.Hidden("Id") >
+    @item.CategoryName </a><span class="badge badge-primary badge-pill">@item.CategoryCount</span> </li>
 }

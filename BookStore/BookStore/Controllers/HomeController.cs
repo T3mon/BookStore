@@ -16,9 +16,9 @@ namespace BookStore.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly BookService _bookService;
+        private readonly UserBookService _bookService;
 
-        public HomeController(ILogger<HomeController> logger, BookService bookService)
+        public HomeController(ILogger<HomeController> logger, UserBookService bookService)
         {
             _logger = logger;
             _bookService = bookService;
