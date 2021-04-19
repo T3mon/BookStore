@@ -1,4 +1,5 @@
 ﻿using Domain.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -24,6 +25,15 @@ namespace Core.Context
         {
             modelBuilder.Entity<Book>().HasOne(x => x.Category).WithMany(x => x.Books).HasForeignKey(x => x.CategoryId).OnDelete(DeleteBehavior.NoAction);
             modelBuilder.Entity<Category>().HasMany(x => x.Books).WithOne(x => x.Category).OnDelete(DeleteBehavior.NoAction);
+
+            //RoleManager<IdentityRole> roleManager;
+
+            //if (!roleManager.RoleExistsAsync("Admin").Result)
+            //{
+            //    IdentityRole role = new IdentityRole();
+            //    role.Name = "Admin";
+            //    IdentityResult roleResult = roleManager.CreateAsync(role).Result;
+            //}
 
             modelBuilder.Entity<Category>().HasData(new Category[] {
                     new Category

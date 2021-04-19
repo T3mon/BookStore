@@ -1,4 +1,6 @@
 ﻿using BLL;
+using BLL.Service;
+using BLL.Service.Interfaces;
 using BookStore.Models;
 using BookStore.UI.Models;
 using Domain.Models;
@@ -16,9 +18,9 @@ namespace BookStore.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly UserBookService _bookService;
+        private readonly IBookService _bookService;
 
-        public HomeController(ILogger<HomeController> logger, UserBookService bookService)
+        public HomeController(ILogger<HomeController> logger, IBookService bookService)
         {
             _logger = logger;
             _bookService = bookService;
@@ -31,6 +33,9 @@ namespace BookStore.Controllers
         }
         [HttpGet]
         public PartialViewResult GetBooks() => PartialView(_bookService.GetBooks());
+        public PartialViewResult GetBooks(int id) => PartialView(_bookService.GetBooks(id));
+        [HttpGet]
+        public PartialViewResult GetBooksInCategory() => PartialView(_bookService.GetBooks());
         [HttpGet]
         public PartialViewResult GetCategories() => PartialView(_bookService.GetCategories());
 

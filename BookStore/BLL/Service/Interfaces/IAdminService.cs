@@ -10,13 +10,16 @@ namespace BLL.Service.Interfaces
     public interface IAdminService
     {
         Task CreateBook(BookDto bookDto);
-        Task<BookDto> GetBook();
+        Task<BookDto> GetBookById();
+        Task<List<BookDto>> GetBooks();
 
         Task CreateCategory(CategoryDto categoryDto);
         Task<CategoryDto> GetCategoryWithBooks();
-        
+        Task<List<CategoryDto>> GetAllCategorys();
+
         Task CreateAuthor(AutorDto autorDto);
         Task<CategoryDto> GetAuthorWithBooks();
+        Task<CategoryDto> GetAllAuthors();
 
 
 

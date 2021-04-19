@@ -3,6 +3,7 @@ using BLL.ModelsDto;
 using BLL.Service.Interfaces;
 using Core.Context;
 using Domain.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,8 +22,6 @@ namespace BLL.Service
             _storeContext = storeContext;
             _mapper = mapper;
         }
-
-
         //HTPP POSTS
         public async Task CreateCategory(CategoryDto categoryDto)
         {
@@ -46,12 +45,27 @@ namespace BLL.Service
 
         }
 
-        public Task<BookDto> GetBook()
+        public Task<BookDto> GetBookById()
         {
             throw new NotImplementedException();
         }
 
         public Task<CategoryDto> GetCategoryWithBooks()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<BookDto>> GetBooks()
+        {
+            return _mapper.Map<List<BookDto>>(await _storeContext.Books.ToListAsync());
+        }
+
+        public Task<List<CategoryDto>> GetAllCategorys()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<CategoryDto> GetAllAuthors()
         {
             throw new NotImplementedException();
         }

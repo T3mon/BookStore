@@ -61,6 +61,8 @@ namespace BookStore
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
 
+            services.AddScoped<IBookService, UserBookService>();
+            services.AddScoped<IAdminService, AdminService>();
             services.AddTransient<IEmailSender, EmailSender>();
             services.Configure<EmailConfirmationProviderOption>(op => op.TokenLifespan = TimeSpan.FromDays(20));
 

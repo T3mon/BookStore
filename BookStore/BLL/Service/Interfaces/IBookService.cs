@@ -12,7 +12,5 @@ namespace BLL.Service.Interfaces
         public IList<BookDto> GetBooks();
         public IList<BookDto> GetBooks(int? categotyId);
         public IList<CategoryDto> GetCategories();
-
-
     }
 }
